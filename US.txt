@@ -1,0 +1,14 @@
+Projeto: Site focado em facilitar a troca de serviços entre mochileiros/anfitriões 
+
+User Stories:
+US1: Como usuário quero poder me cadastrar para ter acesso ao sistema
+US2: Como usuário (mochileiro) quero poder viajar de forma barata
+US3: Como usuário (anfitrião), quero oferecer acomodação em troca de ajuda/serviços no local
+US4: Como usuário (mochileiro) quero me conectar com pessoas nativas da região para onde vou viajar
+US5: Como usuário (anfitrião) quero que o mochileiro conte como foi a experiência que teve, de forma que ajude na divulgação do meu local
+US6: Como usuário (mochileiro), quero poder visualizar as cidades disponíveis
+US7: Como usuário (mochileiro), quero poder entrar em contato com os anfitriões
+US8: Como usuário quero poder fazer login
+US9: Como usuário quero poder realizar busca por cidades específicas
+US10: Como usuário (anfitrião) quero poder publicar meu local com fotos e descrição para visualizarem
+US11: Como usuário, quero poder deslogar do sistema
