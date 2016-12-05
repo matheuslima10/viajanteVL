@@ -2,15 +2,14 @@
 
 Cenário: Cadastro válido
 	Quando: o usuário entra com os seguintes campos para fazer o cadastro
-	| usuario		        | senha        |Cpf            |Opção muchileiro/anfitrião   |email		|botão de Confirmação	
-	| matheus               	| 12345        |11243328800    |muchileiro		     |matheus1@hotmail	|confirmar		
-	| lucas12               	| abcds22      |56612323400    |anfitrião                    |lucaserd@gmail.com|confirmar
+	| usuario		        | senha        |Cpf            |Opção mochileiro/anfitrião   |email		|botão de Confirmação	
+	| matheus               	| 12345        |11243328800    |mochileiro		     |matheus1@hotmail	|confirmar		| lucas12               	| abcds22      |56612323400    |anfitrião                    |lucaserd@gmail.com|confirmar
 	Então: exibir a mensagem "Cadastro efetuado com sucesso"
 
 Cénario: Cadastro inválido 
 	Quando: o usuário colocar alguma informação inexistente
-	| usuario 		| senha        |Cpf            |Opção muchileiro/anfitrião   |email		|botão de Confirmação
-	| matheus               | 12345        |112433         |muchileiro	             |iludas@dad.com	|confirmar
+	| usuario 		| senha        |Cpf            |Opção mochileiro/anfitrião   |email		|botão de Confirmação
+	| matheus               | 12345        |112433         |mochileiro                   |iludas@dad.com	|confirmar
 	| Lucas12               | 232@hhh      |fgghjg         |anfitrião                    |bnnvc&hotmail.com	|confirmar
 	Então: exibir a mensagem "Informação incorreta"
 
@@ -31,21 +30,21 @@ Cenário: oferecer acomodação inválida
 	Então: exibir a mensagem "acomodação ou serviço inválido"
 
 Cenário: Procurar acomodação
-	Quando: o usuário(muchileiro) entra com os seguintes campos:
+	Quando: o usuário(mochileiro) entra com os seguintes campos:
 	|cidade		| procurar acomodação	  | procurar ajuda/serviço	|botão de Confirmação
 	| fedrin	| hotel			  | atendente			|Confirmar
 	| Ottawa	|pousada        	  | beber			|Confirmar
 	Então: exibir a mensagem "Pedido de acomadação confirmado"
 
 Cenário: Avaliação da estadia
-	Quando: o usuário(muchileiro) avalia a entadia no lugar selecionado:
+	Quando: o usuário(mochileiro) avalia a entadia no lugar selecionado:
 	| usuario		| avaliação(boa,média, ruim)	|botão de Confirmação
 	| matheus		| boa				|Confirmar
 	| lucas1	        | ruim				|Confirmar
 	Então: exibir a mensagem "avaliação feita com sucesso"
 
 Cenário: Avaliação da estadia inválida
-	Quando: o usuário(muchileiro) avalia a entadia no lugar selecionado:
+	Quando: o usuário(mochileiro) avalia a entadia no lugar selecionado:
 	| usuario		| avaliação(boa,média, ruim)	|botão de Confirmação
 	| matheus		| 123dff			|Confirmar
 	| lucas1	        | horrível			|Confirmar
