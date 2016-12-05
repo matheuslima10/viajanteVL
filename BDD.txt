@@ -1,0 +1,106 @@
+
+
+Cenário: Cadastro válido
+	Quando: o usuário entra com os seguintes campos para fazer o cadastro
+	| usuario		        | senha        |Cpf            |Opção muchileiro/anfitrião   |email		|botão de Comfirmação	
+	| matheus               	| 12345        |11243328800    |muchileiro		     |matheus1@hotmail	|confirmar		
+	| lucas12               	| abcds22      |56612323400    |anfitrião                    |lucaserd@gmail.com|confirmar
+	Então: exibir a mensagem "Cadastro efetuado com sucesso"
+
+Cénario: Cadastro inválido 
+	Quando: o usuário colocar alguma informação inexistente
+	| usuario 		| senha        |Cpf            |Opção muchileiro/anfitrião   |email		|botão de Comfirmação
+	| matheus               | 12345        |112433         |muchileiro	             |iludas@dad.com	|confirmar
+	| Lucas12               | 232@hhh      |fgghjg         |anfitrião                    |bnnvc&hotmail.com	|confirmar
+	Então: exibir a mensagem "Informação incorreta"
+
+Cenário: oferecer acomodação
+	Quando: o usuário(anfitrião) entra com os seguintes campos:
+	|cidade			| acomodação		| ajuda/serviço		|botão de Comfirmação
+	| rio das cruzes	| hotel			| atendente		|Comfirmar
+	| cajueiro	        | pousada		| entregador		|Comfirmar
+	| Ottawa		| pousada		| tecnico me ti		|Comfirmar
+	| Quebec		| hotel			| programador		|Comfirmar
+	Então: exibir a mensagem "acomodação oferecida cm sucesso"
+
+Cenário: oferecer acomodação inválida
+	Quando: o usuário(anfitrião) entra com os seguintes campos:
+	|cidade			| acomodação		| ajuda/serviço		|botão de Comfirmação
+	|fedrin			| hotel			| atendente		|Comfirmar
+	|attawa	  		| pousada	        | beber			|Comfirmar
+	Então: exibir a mensagem "acomodação ou serviço inválido"
+
+Cenário: Procurar acomodação
+	Quando: o usuário(muchileiro) entra com os seguintes campos:
+	|cidade		| procurar acomodação	  | procurar ajuda/serviço	|botão de Comfirmação
+	| fedrin	| hotel			  | atendente			|Comfirmar
+	| Ottawa	|pousada        	  | beber			|Comfirmar
+	Então: exibir a mensagem "Pedido de acomadação confirmado"
+
+Cenário: Avaliação da estadia
+	Quando: o usuário(muchileiro) avalia a entadia no lugar selecionado:
+	| usuario		| avaliação(boa,média, ruim)	|botão de Comfirmação
+	| matheus		| boa				|Comfirmar
+	| lucas1	        | ruim				|Comfirmar
+	Então: exibir a mensagem "avaliação feita com sucesso"
+
+Cenário: Avaliação da estadia inválida
+	Quando: o usuário(muchileiro) avalia a entadia no lugar selecionado:
+	| usuario		| avaliação(boa,média, ruim)	|botão de Comfirmação
+	| matheus		| 123dff			|Comfirmar
+	| lucas1	        | horrível			|Comfirmar
+	| matheus		| excelente			|Comfirmar
+	Então: exibir a mensagem "avaliação inválida"
+
+Cenário: visualizar cidades disponíveis
+	Quando: o usuário(mochileiro) entra com os seguintes campos:
+	| cidades		| acomodação		|botão de Comfirmação
+	| rio das cruzes	| hotel			|Comfirmar
+	| cajueiro	        | casa			|Comfirmar
+	| Ottawa		| pousada		|Comfirmar
+	| Quebec		| hotel			|Comfirmar
+	Então: exibir a mensagem "acomodação oferecida com sucesso"
+
+
+Cenário: entrar em contato com anfitrião
+	Quando: o usuário(mochileiro) entra em contato com um anfitrião:
+	| anfitrião		| cidades		| email				|entrar em contato
+	| lucas12		| rio das cruzes	| lucas1@gmail.com		|Comfirmar
+	| roberto	        | Ottawa		| robertovegas@gmail.com	|Comfirmar
+	Então: exibir a mensagem "solicitação de contato enviada"
+
+Cenário: Logar no sistema
+	Quando: o usuário entra com os seguintes campos fazer o login
+	| usuario		| senha        |botão de Comfirmação	
+	| matheus               | 12345        |confirmar		
+	| lucas12               | abcds22      |confirmar
+	Então: exibir a mensagem "Login efetuado com sucesso"
+
+Cenário: Logar no sistema dados inválidos
+	Quando: o usuário entra com os seguintes campos fazer o login
+	| usuario		| senha        |botão de Comfirmação	
+	| matheus               | sddw244      |confirmar		
+	| lucas1233             | abcds22      |confirmar
+	Então: exibir a mensagem "senha ou nome de usuario está incorreto"
+
+Cenário: Deslogar do sistema
+	Quando: o usuário quero deslogar do sistema
+	| usuario		| sair       
+	| matheus               | comfirmar      	        
+	Então: exibir a mensagem "Conta deslogada com sucesso"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
