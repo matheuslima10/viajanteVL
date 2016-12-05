@@ -1,93 +1,93 @@
 
 
-Cen·rio: Cadastro v·lido
-	Quando: o usu·rio entra com os seguintes campos para fazer o cadastro
-	| usuario		        | senha        |Cpf            |OpÁ„o muchileiro/anfitri„o   |email		|bot„o de ComfirmaÁ„o	
+Cen√°rio: Cadastro v√°lido
+	Quando: o usu√°rio entra com os seguintes campos para fazer o cadastro
+	| usuario		        | senha        |Cpf            |Op√ß√£o muchileiro/anfitri√£o   |email		|bot√£o de Confirma√ß√£o	
 	| matheus               	| 12345        |11243328800    |muchileiro		     |matheus1@hotmail	|confirmar		
-	| lucas12               	| abcds22      |56612323400    |anfitri„o                    |lucaserd@gmail.com|confirmar
-	Ent„o: exibir a mensagem "Cadastro efetuado com sucesso"
+	| lucas12               	| abcds22      |56612323400    |anfitri√£o                    |lucaserd@gmail.com|confirmar
+	Ent√£o: exibir a mensagem "Cadastro efetuado com sucesso"
 
-CÈnario: Cadastro inv·lido 
-	Quando: o usu·rio colocar alguma informaÁ„o inexistente
-	| usuario 		| senha        |Cpf            |OpÁ„o muchileiro/anfitri„o   |email		|bot„o de ComfirmaÁ„o
+C√©nario: Cadastro inv√°lido 
+	Quando: o usu√°rio colocar alguma informa√ß√£o inexistente
+	| usuario 		| senha        |Cpf            |Op√ß√£o muchileiro/anfitri√£o   |email		|bot√£o de Confirma√ß√£o
 	| matheus               | 12345        |112433         |muchileiro	             |iludas@dad.com	|confirmar
-	| Lucas12               | 232@hhh      |fgghjg         |anfitri„o                    |bnnvc&hotmail.com	|confirmar
-	Ent„o: exibir a mensagem "InformaÁ„o incorreta"
+	| Lucas12               | 232@hhh      |fgghjg         |anfitri√£o                    |bnnvc&hotmail.com	|confirmar
+	Ent√£o: exibir a mensagem "Informa√ß√£o incorreta"
 
-Cen·rio: oferecer acomodaÁ„o
-	Quando: o usu·rio(anfitri„o) entra com os seguintes campos:
-	|cidade			| acomodaÁ„o		| ajuda/serviÁo		|bot„o de ComfirmaÁ„o
-	| rio das cruzes	| hotel			| atendente		|Comfirmar
-	| cajueiro	        | pousada		| entregador		|Comfirmar
-	| Ottawa		| pousada		| tecnico me ti		|Comfirmar
-	| Quebec		| hotel			| programador		|Comfirmar
-	Ent„o: exibir a mensagem "acomodaÁ„o oferecida cm sucesso"
+Cen√°rio: oferecer acomoda√ß√£o
+	Quando: o usu√°rio(anfitri√£o) entra com os seguintes campos:
+	|cidade			| acomoda√ß√£o		| ajuda/servi√ßo		|bot√£o de Confirma√ß√£o
+	| rio das cruzes	| hotel			| atendente		|Confirmar
+	| cajueiro	        | pousada		| entregador		|Confirmar
+	| Ottawa		| pousada		| tecnico me ti		|Confirmar
+	| Quebec		| hotel			| programador		|Confirmar
+	Ent√£o: exibir a mensagem "acomoda√ß√£o oferecida cm sucesso"
 
-Cen·rio: oferecer acomodaÁ„o inv·lida
-	Quando: o usu·rio(anfitri„o) entra com os seguintes campos:
-	|cidade			| acomodaÁ„o		| ajuda/serviÁo		|bot„o de ComfirmaÁ„o
-	|fedrin			| hotel			| atendente		|Comfirmar
-	|attawa	  		| pousada	        | beber			|Comfirmar
-	Ent„o: exibir a mensagem "acomodaÁ„o ou serviÁo inv·lido"
+Cen√°rio: oferecer acomoda√ß√£o inv√°lida
+	Quando: o usu√°rio(anfitri√£o) entra com os seguintes campos:
+	|cidade			| acomoda√ß√£o		| ajuda/servi√ßo		|bot√£o de Confirma√ß√£o
+	|fedrin			| hotel			| atendente		|Confirmar
+	|attawa	  		| pousada	        | beber			|Confirmar
+	Ent√£o: exibir a mensagem "acomoda√ß√£o ou servi√ßo inv√°lido"
 
-Cen·rio: Procurar acomodaÁ„o
-	Quando: o usu·rio(muchileiro) entra com os seguintes campos:
-	|cidade		| procurar acomodaÁ„o	  | procurar ajuda/serviÁo	|bot„o de ComfirmaÁ„o
-	| fedrin	| hotel			  | atendente			|Comfirmar
-	| Ottawa	|pousada        	  | beber			|Comfirmar
-	Ent„o: exibir a mensagem "Pedido de acomadaÁ„o confirmado"
+Cen√°rio: Procurar acomoda√ß√£o
+	Quando: o usu√°rio(muchileiro) entra com os seguintes campos:
+	|cidade		| procurar acomoda√ß√£o	  | procurar ajuda/servi√ßo	|bot√£o de Confirma√ß√£o
+	| fedrin	| hotel			  | atendente			|Confirmar
+	| Ottawa	|pousada        	  | beber			|Confirmar
+	Ent√£o: exibir a mensagem "Pedido de acomada√ß√£o confirmado"
 
-Cen·rio: AvaliaÁ„o da estadia
-	Quando: o usu·rio(muchileiro) avalia a entadia no lugar selecionado:
-	| usuario		| avaliaÁ„o(boa,mÈdia, ruim)	|bot„o de ComfirmaÁ„o
-	| matheus		| boa				|Comfirmar
-	| lucas1	        | ruim				|Comfirmar
-	Ent„o: exibir a mensagem "avaliaÁ„o feita com sucesso"
+Cen√°rio: Avalia√ß√£o da estadia
+	Quando: o usu√°rio(muchileiro) avalia a entadia no lugar selecionado:
+	| usuario		| avalia√ß√£o(boa,m√©dia, ruim)	|bot√£o de Confirma√ß√£o
+	| matheus		| boa				|Confirmar
+	| lucas1	        | ruim				|Confirmar
+	Ent√£o: exibir a mensagem "avalia√ß√£o feita com sucesso"
 
-Cen·rio: AvaliaÁ„o da estadia inv·lida
-	Quando: o usu·rio(muchileiro) avalia a entadia no lugar selecionado:
-	| usuario		| avaliaÁ„o(boa,mÈdia, ruim)	|bot„o de ComfirmaÁ„o
-	| matheus		| 123dff			|Comfirmar
-	| lucas1	        | horrÌvel			|Comfirmar
-	| matheus		| excelente			|Comfirmar
-	Ent„o: exibir a mensagem "avaliaÁ„o inv·lida"
+Cen√°rio: Avalia√ß√£o da estadia inv√°lida
+	Quando: o usu√°rio(muchileiro) avalia a entadia no lugar selecionado:
+	| usuario		| avalia√ß√£o(boa,m√©dia, ruim)	|bot√£o de Confirma√ß√£o
+	| matheus		| 123dff			|Confirmar
+	| lucas1	        | horr√≠vel			|Confirmar
+	| matheus		| excelente			|Confirmar
+	Ent√£o: exibir a mensagem "avalia√ß√£o inv√°lida"
 
-Cen·rio: visualizar cidades disponÌveis
-	Quando: o usu·rio(mochileiro) entra com os seguintes campos:
-	| cidades		| acomodaÁ„o		|bot„o de ComfirmaÁ„o
-	| rio das cruzes	| hotel			|Comfirmar
-	| cajueiro	        | casa			|Comfirmar
-	| Ottawa		| pousada		|Comfirmar
-	| Quebec		| hotel			|Comfirmar
-	Ent„o: exibir a mensagem "acomodaÁ„o oferecida com sucesso"
+Cen√°rio: visualizar cidades dispon√≠veis
+	Quando: o usu√°rio(mochileiro) entra com os seguintes campos:
+	| cidades		| acomoda√ß√£o		|bot√£o de Confirma√ß√£o
+	| rio das cruzes	| hotel			|Confirmar
+	| cajueiro	        | casa			|Confirmar
+	| Ottawa		| pousada		|Confirmar
+	| Quebec		| hotel			|Confirmar
+	Ent√£o: exibir a mensagem "acomoda√ß√£o oferecida com sucesso"
 
 
-Cen·rio: entrar em contato com anfitri„o
-	Quando: o usu·rio(mochileiro) entra em contato com um anfitri„o:
-	| anfitri„o		| cidades		| email				|entrar em contato
-	| lucas12		| rio das cruzes	| lucas1@gmail.com		|Comfirmar
-	| roberto	        | Ottawa		| robertovegas@gmail.com	|Comfirmar
-	Ent„o: exibir a mensagem "solicitaÁ„o de contato enviada"
+Cen√°rio: entrar em contato com anfitri√£o
+	Quando: o usu√°rio(mochileiro) entra em contato com um anfitri√£o:
+	| anfitri√£o		| cidades		| email				|entrar em contato
+	| lucas12		| rio das cruzes	| lucas1@gmail.com		|Confirmar
+	| roberto	        | Ottawa		| robertovegas@gmail.com	|Confirmar
+	Ent√£o: exibir a mensagem "solicita√ß√£o de contato enviada"
 
-Cen·rio: Logar no sistema
-	Quando: o usu·rio entra com os seguintes campos fazer o login
-	| usuario		| senha        |bot„o de ComfirmaÁ„o	
+Cen√°rio: Logar no sistema
+	Quando: o usu√°rio entra com os seguintes campos fazer o login
+	| usuario		| senha        |bot√£o de Confirma√ß√£o	
 	| matheus               | 12345        |confirmar		
 	| lucas12               | abcds22      |confirmar
-	Ent„o: exibir a mensagem "Login efetuado com sucesso"
+	Ent√£o: exibir a mensagem "Login efetuado com sucesso"
 
-Cen·rio: Logar no sistema dados inv·lidos
-	Quando: o usu·rio entra com os seguintes campos fazer o login
-	| usuario		| senha        |bot„o de ComfirmaÁ„o	
+Cen√°rio: Logar no sistema dados inv√°lidos
+	Quando: o usu√°rio entra com os seguintes campos fazer o login
+	| usuario		| senha        |bot√£o de Confirma√ß√£o	
 	| matheus               | sddw244      |confirmar		
 	| lucas1233             | abcds22      |confirmar
-	Ent„o: exibir a mensagem "senha ou nome de usuario est· incorreto"
+	Ent√£o: exibir a mensagem "senha ou nome de usuario est√° incorreto"
 
-Cen·rio: Deslogar do sistema
-	Quando: o usu·rio quero deslogar do sistema
+Cen√°rio: Deslogar do sistema
+	Quando: o usu√°rio quero deslogar do sistema
 	| usuario		| sair       
-	| matheus               | comfirmar      	        
-	Ent„o: exibir a mensagem "Conta deslogada com sucesso"
+	| matheus               | confirmar      	        
+	Ent√£o: exibir a mensagem "Conta deslogada com sucesso"
 
 
 
